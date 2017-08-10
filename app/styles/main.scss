@@ -89,3 +89,109 @@ body {
     border-bottom: 0;
   }
 }
+
+//Imports
+@import 'variables';
+@import 'modules';
+@import 'typo';
+
+//diagonal lines for the hero
+* {
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  margin:0;
+    background-color: black;
+}
+
+#backshape .wrapper {
+  display:block;
+  float:left;
+  margin:50px auto 150px;
+  width:100%;
+  padding:0 5%;
+  transform:skew(0deg,-5deg);
+-ms-transform:skew(0deg,-10deg);
+-webkit-transform:skew(0deg,-5deg); 
+}
+#backshape {
+  z-index:1;
+  display:block;
+  float:left;
+  margin-top:-100px;
+  width:100%;
+  background:$blackBackground;
+  transform:skew(0deg,10deg);
+-ms-transform:skew(0deg,10deg); /* IE 9 */
+-webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
+}
+.content {
+  z-index:2;
+  margin-top:-4em;
+  position:relative;
+  width:100%;
+  display:block;
+  float:left;
+}
+.content {
+  height:100px;
+  background:$blackBackground;
+}
+
+//Content of the hero
+.hero{
+   width: 100%;
+   background-color: $blackBackground;
+}
+
+.heroText {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font: $fontInno;
+}
+
+p {
+    color: $whiteInno;
+}
+
+h1{
+    color: $blueInno;
+}
+
+.inno {
+    text-align: right;
+}
+
+.btn {
+    background-color: $blueInno !important;
+    color: $white;
+}
+
+.container {
+    border-top: 300px solid blue;
+}
+
+//Hero for small screens
+@media screen and (max-width: 578px) {
+    p, .inno{    
+        text-align: center !important;
+    }
+    p, .btn {
+        font-size: 14px !important;
+        margin-right: 10px;
+        margin-left: 10px;
+     }
+    h1 {
+        font-size: 30px !important;
+     }
+    .inno{
+        margin-bottom: auto;
+    }
+    .btn {
+        float: right;
+    }
+}
+
+
