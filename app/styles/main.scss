@@ -95,6 +95,30 @@ body {
 @import 'modules';
 @import 'typo';
 
+
+// Swiper
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    overflow: hidden;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
 //diagonal lines for the hero
 * {
   -moz-box-sizing: border-box;
@@ -103,7 +127,7 @@ body {
 }
 body {
   margin:0;
-    background-color: black;
+    background-color: $blackBackground;
 }
 
 #backshape .wrapper {
@@ -136,8 +160,8 @@ body {
   float:left;
 }
 .content {
-  height:100px;
-  background:$blackBackground;
+  height:250px;
+  background:black;
 }
 
 //Content of the hero
@@ -193,5 +217,7 @@ h1{
         float: right;
     }
 }
+
+
 
 

@@ -17,7 +17,10 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+     
+    <!-- Sweiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <!-- googlefonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto" rel="stylesheet">
     
@@ -29,21 +32,20 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<!--
-      <div class="hero">
-          <img src="http://via.placeholder.com/2000x800" class="img-fluid" alt="Responsive image">
-          <div class="row">
-            <div class="col-sm-5 heroText">
-                <h1 class="inno">HY, WE ARE<br> INNOACTIVE</h1>
-            </div>
-            <div class="col-sm-4 heroText">
-                <p>Sell more by engaging your custimers with your products in Virtual Reality and Augmented Reality. Nomatter if business or private Customer, people have to imagine what they buy. Let´s show it to them.</p>
-              <button type="button" class="btn">let´s talk</button>
-            </div>
-          </div>
-          </div>
--->
-      
+
+<!-- Slider main container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="images/landscape.jpg"></div>
+            <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="images/spring-lake.jpg"></div>
+            <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="images/water-lily.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+</div>
       
 <div class="hero">
     <img src="http://via.placeholder.com/2000x800" class="img-fluid" alt="Responsive image">
@@ -101,5 +103,23 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+      
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    
+    <script>
+      
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            loop: true
+        }); 
+    </script>
+
   </body>
 </html>
