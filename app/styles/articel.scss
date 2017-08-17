@@ -1,0 +1,103 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+@import "variables.scss";
+@import "typo.scss";
+
+// Navbar
+
+.navbarColor {
+	background-color: $greenDoc;
+	.nav-link, a {
+		color: $whiteDoc !important;
+		font-size: 15px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 0;
+	}
+}
+
+.navbar-nav {
+	margin-right: -23px;
+}
+
+.border {
+	border-left: 1px solid $whiteDoc;
+}
+
+// Articel
+
+.map {
+	position: relative;
+	height: 3rem;
+	line-height: 3rem; 
+	z-index: 10;
+	transition: opacity 0.25;
+}
+
+.wrapper {
+	margin-left: 3px;
+		.header {
+			margin-top: 20px;
+			color: $greenDoc;
+		}	
+		.autor {
+			color: $grayDoc;
+			margin-top: -10px;
+			text-transform: uppercase;
+
+		}
+		.secondHeader {
+			color: $greenDoc;
+			padding-top: 7px; 
+		}
+}
+
+
+// Footer
+
+.footerColor {
+		background-color: $greenDoc;
+		margin-top: 30px;
+}
+
+h6 {
+	color: $whiteDoc;
+}
+
+footer {
+	.footerText {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	p {
+		color: $whiteDoc;
+		font-size: 10px;
+	}
+}
+
+.focus {
+		max-width: 130px;
+		float: right;
+}
+
+.footerList{
+	text-align: right;
+}
+
+.borderFooter {
+	border-left: 1px solid $whiteDoc;
+	padding-left: 3px;
+}
+
+.footerText {
+	boder-left: 1px solid white;
+}
+
+@media screen and (max-width: 578px) {
+	.footerText {
+        text-align: center !important;
+	}
+}
+
